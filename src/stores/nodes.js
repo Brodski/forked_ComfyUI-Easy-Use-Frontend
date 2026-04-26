@@ -86,14 +86,6 @@ export const useNodesStore = defineStore('groups', {
                 pinned: g.pinned,
                 show_nodes: g.show_nodes
             })))
-            // let _groups = cloneDeep(groups.map(g => new Object({
-            //     id: g.id,
-            //     pos: Array.isArray(g.pos) ? [...g.pos] : g.pos,
-            //     size: Array.isArray(g.size) ? [...g.size] : g.size,
-            //     title: g.title,
-            //     pinned: g.pinned,
-            //     show_nodes: g.show_nodes
-            // })))
             _groups.forEach(group => {
                 group.sub_groups = [];
                 _groups.forEach(innerGroup => {

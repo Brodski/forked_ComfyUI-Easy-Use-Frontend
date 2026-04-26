@@ -106,7 +106,6 @@ const showGroupOnly = computed(_=> getSetting('EasyUse.NodesMap.DisplayGroupOnly
 const isExpand = ref(false)
 const expandAll = _=>{
   isExpand.value = !isExpand.value
-  console.log(`[NodesMap420] ${isExpand.value ? 'Expanding' : 'Collapsing'} all groups`)
   app.canvas.graph._groups.forEach(group=>{
     group.show_nodes = isExpand.value
   })
