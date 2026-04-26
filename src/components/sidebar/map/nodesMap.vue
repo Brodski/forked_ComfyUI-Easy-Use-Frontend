@@ -101,15 +101,6 @@ const {groups_nodes, groups, nodes} = storeToRefs(store)
 
 const showGroupOnly = computed(_=> getSetting('EasyUse.NodesMap.DisplayGroupOnly'))
 
-// ─── Lifecycle ───────────────────────────────────────────────────────────────
-onMounted(() => {
-  console.log(`[NodesMap] Component mounted`, {
-    groupCount: groups.value?.length ?? 0,
-    nodeCount: nodes.value?.length ?? 0,
-    showGroupOnly: showGroupOnly.value,
-  })
-})
-
 
 // ─── Expand / Collapse ───────────────────────────────────────────────────────
 const isExpand = ref(false)
