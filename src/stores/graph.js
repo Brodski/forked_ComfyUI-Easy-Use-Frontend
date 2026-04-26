@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-// import cloneDeep from 'lodash/cloneDeep'
 export const useGraphStore = defineStore('graphStore',{
     state: _ => ({
         selectors: [],

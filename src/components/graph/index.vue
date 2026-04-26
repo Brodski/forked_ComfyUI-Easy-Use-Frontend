@@ -17,7 +17,6 @@
 import {ref, onMounted} from 'vue'
 import {app} from "@/composable/comfyAPI";
 import sleep from "@/composable/sleep";
-// import cloneDeep from 'lodash/cloneDeep'
 
 // store
 import {storeToRefs} from "pinia";
