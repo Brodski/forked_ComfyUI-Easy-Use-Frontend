@@ -37,7 +37,6 @@
 <script setup>
 import { $t } from '@/composable/i18n.js'
 import { ref, reactive, computed, watch, defineComponent, defineProps, defineEmits, onMounted } from 'vue'
-// import cloneDeep from "lodash/cloneDeep";
 
 const prefix = 'comfyui-easyuse-slider'
 defineComponent({name:prefix})

@@ -1,7 +1,6 @@
 import {app} from "@/composable/comfyAPI.js";
 import {NODES_MAP_ID} from "@/constants/index";
 import { defineStore } from 'pinia'
-// import cloneDeep from "lodash/cloneDeep";
 import {getSetting} from "@/composable/settings.js";
 export const useNodesStore = defineStore('groups', {
     state: _ => ({

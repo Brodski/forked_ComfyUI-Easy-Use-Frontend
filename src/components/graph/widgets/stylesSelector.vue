@@ -94,8 +94,6 @@ import {toast} from "@/components/toast.js";
 
 import {storeToRefs} from "pinia";
 import {useGraphStore} from "@/stores/graph.js";
-// import cloneDeep from "lodash/cloneDeep";
-// import { set } from "lodash";
 const store = useGraphStore()
 const {selectors_styles} = storeToRefs(store)
 
